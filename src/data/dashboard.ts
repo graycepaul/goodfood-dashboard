@@ -7,12 +7,12 @@ import {
 import {
   LayoutDashboard,
   ShoppingCart,
-  Utensils,
-  MessageSquare,
   Settings,
   CreditCard,
   User,
   HelpCircle,
+  NotepadText,
+  MessageCircleMore,
 } from "lucide-react";
 
 export const chartData: ChartDataItem[] = [
@@ -140,13 +140,13 @@ export const menuItems = [
       {
         id: "manage-menu",
         label: "Manage Menu",
-        icon: Utensils,
+        icon: NotepadText,
         active: false,
       },
       {
         id: "customer-review",
         label: "Customer Review",
-        icon: MessageSquare,
+        icon: MessageCircleMore,
         active: false,
       },
     ],

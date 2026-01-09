@@ -2,7 +2,7 @@ import { foodItems } from "@/data/dashboard";
 
 export default function MostOrderedFood() {
   return (
-    <div className="bg-white border-l border-t border-gray-200  p-6 w-full">
+    <div className="bg-white rounded-lg xl:rounded-none border-0 xl:border-l border-t border-gray-200  p-6 w-full">
       {/* Header */}
       <div className="mb-12">
         <h2 className="text-lg font-medium text-gray-800 mb-2">

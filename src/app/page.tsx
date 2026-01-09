@@ -19,26 +19,26 @@ export default function DashboardPage() {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3">
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 xl:gap-0 mb-4 xl:mb-0">
+          <div className="xl:col-span-2">
             <RevenueCard />
           </div>
 
-          <div className="lg:col-span-1">
+          <div className="xl:col-span-1">
             <OrderTimeChart />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 ">
-          <div className="md:col-span-2 lg:col-span-1 ">
+        <div className="grid grid-cols-1 md:grid-cols-5 xl:grid-cols-3 gap-4 xl:gap-0">
+          <div className="md:col-span-2 xl:col-span-1 ">
             <Ratings />
           </div>
 
-          <div className="md:col-span-3 lg:col-span-1">
+          <div className="md:col-span-3 xl:col-span-1">
             <MostOrderedFood />
           </div>
 
-          <div className="md:col-span-5 lg:col-span-1">
+          <div className="md:col-span-5 xl:col-span-1">
             <OrderReport />
           </div>
         </div>

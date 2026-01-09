@@ -14,7 +14,7 @@ import {
 
 export default function RevenueCard() {
   return (
-    <div className="bg-white  p-6 w-full">
+    <div className="bg-white  p-6 w-full rounded-lg xl:rounded-none">
       {/* Header Section */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
         <div>

@@ -5,7 +5,7 @@ import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
 export default function OrderTimeChart() {
   return (
-    <div className="bg-white border-l h-full border-gray-200  p-6 w-full">
+    <div className="bg-white border-0 xl:border-l h-full border-gray-200  p-6 w-full rounded-lg xl:rounded-none">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-lg font-semibold text-gray-800">Order Time</h2>

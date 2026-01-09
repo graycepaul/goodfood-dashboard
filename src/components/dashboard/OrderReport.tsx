@@ -14,7 +14,7 @@ import {
 
 export default function OrderReport() {
   return (
-    <div className="bg-white border-l border-t border-gray-200 p-6 w-full">
+    <div className="bg-white rounded-lg xl:rounded-none border-0 xl:border-l xl:border-t border-gray-200 p-6 w-full">
       {/* Header Section */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
         <div>

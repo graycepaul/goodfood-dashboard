@@ -21,7 +21,7 @@ export default function Sidebar() {
       {/* Mobile menu button */}
       <button
         onClick={toggleMobileSidebar}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-white rounded-lg shadow-md"
+        className="md:hidden fixed top-4 right-4 z-50 p-2 bg-white rounded-lg shadow-md"
       >
         {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
@@ -29,7 +29,7 @@ export default function Sidebar() {
       {/* Overlay for mobile */}
       {isMobileOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="md:hidden fixed inset-0 bg-gray-800/70 bg-opacity-50 z-40"
           onClick={() => setIsMobileOpen(false)}
         />
       )}
@@ -37,11 +37,11 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside
         className={`
-        fixed lg:static top-0 left-0 z-40
+        fixed md:static top-0 left-0 z-40
         bg-[#f1f2f7] text-gray-600
         transition-all duration-300 ease-in-out
         ${isCollapsed ? "w-20" : "w-72"}
-        ${isMobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
+        ${isMobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
       `}
       >
         <div className="flex flex-col h-full">
@@ -70,11 +70,11 @@ export default function Sidebar() {
           </div>
 
           {/* Menu Items */}
-          <nav className="flex-1 p-4 space-y-8 overflow-y-auto">
+          <nav className="flex-1 p-4 space-y-8 overflow-y-auto pb-32">
             {menuItems.map((section) => (
               <div key={section.section}>
                 {!isCollapsed && (
-                  <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-wider px-4 mb-2">
+                  <h2 className="text-xs  text-gray-500 uppercase tracking-wider px-4 mb-2">
                     {section.section}
                   </h2>
                 )}
@@ -83,7 +83,7 @@ export default function Sidebar() {
                     <li key={item.id}>
                       <button
                         className={`
-                          w-full flex items-center rounded-lg px-4 py-3 text-sm font-medium
+                          w-full flex items-center rounded-lg px-4 py-3 text-sm 
                           transition-all duration-200
                           ${
                             item.active
