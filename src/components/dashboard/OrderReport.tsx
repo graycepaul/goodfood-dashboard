@@ -18,7 +18,7 @@ export default function OrderReport() {
       {/* Header Section */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
         <div>
-          <h2 className="text-lg font-medium text-gray-800 mb-2">Order</h2>
+          <h2 className="text-lg text-gray-800 mb-2">Order</h2>
         </div>
         <button className="text-[#5a6acf] hover:text-blue-700 text-sm font-medium px-3 py-2 rounded-lg hover:bg-blue-50 transition-colors border border-[#5a6acf48]">
           View Report

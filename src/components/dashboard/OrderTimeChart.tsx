@@ -8,7 +8,7 @@ export default function OrderTimeChart() {
     <div className="bg-white border-0 xl:border-l h-full border-gray-200  p-6 w-full rounded-lg xl:rounded-none">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-lg font-semibold text-gray-800">Order Time</h2>
+        <h2 className="text-lg text-gray-800">Order Time</h2>
         <button className="text-[#5a6acf] hover:text-blue-700 text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors border border-[#5a6acf48] min-w-fit">
           View Report
         </button>

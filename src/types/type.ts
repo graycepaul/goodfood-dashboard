@@ -6,7 +6,7 @@ export interface ChartDataItem {
 export interface FoodItem {
   name: string;
   price: string;
-  emoji: string;
+  img: string;
 }
 export interface OrderTimeData {
   name: string;

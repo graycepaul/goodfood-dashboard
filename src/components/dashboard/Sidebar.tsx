@@ -5,12 +5,8 @@ import { Menu, X } from "lucide-react";
 import { menuItems } from "@/data/dashboard";
 
 export default function Sidebar() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsCollapsed(!isCollapsed);
-  };
 
   const toggleMobileSidebar = () => {
     setIsMobileOpen(!isMobileOpen);

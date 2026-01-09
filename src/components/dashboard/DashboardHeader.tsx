@@ -2,16 +2,16 @@ import { Bell, Search, ChevronDown } from "lucide-react";
 
 export default function DashboardHeader() {
   return (
-    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white p-6 border-b border-gray-200">
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-white py-3 px-8 border-b border-gray-200">
       {/* Search Input */}
-      <div className="relative w-64 xl:w-full max-w-md pb-1">
+      <div className="relative w-96 xl:w-full max-w-md pb-1 ">
         <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
           <Search className="h-5 w-5 text-gray-400" />
         </div>
         <input
           type="text"
           placeholder="Search"
-          className="w-64 xl:w-full pl-4 pr-4 py-2.5 bg-gray-100  rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-96 xl:w-full pl-4 pr-4 py-2.5 bg-gray-100  rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         />
       </div>
 

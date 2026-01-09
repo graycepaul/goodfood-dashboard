@@ -7,8 +7,8 @@ import MostOrderedFood from "@/components/dashboard/MostOrdered";
 
 export default function DashboardPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="px-4 md:px-6 lg:px-8 py-4 md:py-6">
+    <div className="min-h-screen bg-white">
+      <div className=" py-4 md:py-6">
         <DashboardHeader />
       </div>
 
