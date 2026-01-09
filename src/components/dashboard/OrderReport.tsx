@@ -1,5 +1,6 @@
 "use client";
 
+import { orderData } from "@/data/dashboard";
 import { TrendingDown } from "lucide-react";
 import {
   LineChart,
@@ -10,16 +11,6 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-
-const orderData = [
-  { day: "Mon", lastWeek: 25, last6Days: 35 },
-  { day: "Tue", lastWeek: 5, last6Days: 15 },
-  { day: "Wed", lastWeek: 75, last6Days: 85 },
-  { day: "Thu", lastWeek: 50, last6Days: 60 },
-  { day: "Fri", lastWeek: 85, last6Days: 95 },
-  { day: "Sat", lastWeek: 20, last6Days: 30 },
-  { day: "Sun", lastWeek: 95, last6Days: 110 },
-];
 
 export default function OrderReport() {
   return (

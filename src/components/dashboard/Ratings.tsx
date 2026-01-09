@@ -1,32 +1,6 @@
 "use client";
 
-interface RatingItem {
-  name: string;
-  percentage: number;
-  color: string;
-  borderColor: string;
-}
-
-const ratings: RatingItem[] = [
-  {
-    name: "Food Taste",
-    percentage: 85,
-    color: "bg-[#f9a644]",
-    borderColor: "#f9a644",
-  },
-  {
-    name: "Hygiene",
-    percentage: 85,
-    color: "bg-[#5a6acf]",
-    borderColor: "#5a6acf",
-  },
-  {
-    name: "Packaging",
-    percentage: 92,
-    color: "bg-[#43c5e1]",
-    borderColor: "#43c5e1",
-  },
-];
+import { ratings } from "@/data/dashboard";
 
 export default function Ratings() {
   return (

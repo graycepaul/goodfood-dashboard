@@ -1,9 +1,9 @@
-import DashboardHeader from "@/components/DashboardHeader";
-import RevenueCard from "@/components/RevenueCard";
-import OrderTimeChart from "@/components/OrderTimeChart";
-import OrderReport from "@/components/OrderReport";
-import Ratings from "@/components/Ratings";
-import MostOrderedFood from "@/components/MostOrdered";
+import DashboardHeader from "@/components/dashboard/DashboardHeader";
+import RevenueCard from "@/components/dashboard/RevenueCard";
+import OrderTimeChart from "@/components/dashboard/OrderTimeChart";
+import OrderReport from "@/components/dashboard/OrderReport";
+import Ratings from "@/components/dashboard/Ratings";
+import MostOrderedFood from "@/components/dashboard/MostOrdered";
 
 export default function DashboardPage() {
   return (

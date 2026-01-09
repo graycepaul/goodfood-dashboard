@@ -1,31 +1,4 @@
-interface FoodItem {
-  name: string;
-  price: string;
-  emoji: string;
-}
-
-const foodItems: FoodItem[] = [
-  {
-    name: "Fresh Salad Bowl",
-    price: "IDR 45,000",
-    emoji: "🥗",
-  },
-  {
-    name: "Chicken Noodles",
-    price: "IDR 75,000",
-    emoji: "🍝",
-  },
-  {
-    name: "Smoothie Fruits",
-    price: "IDR 45,000",
-    emoji: "🍹",
-  },
-  {
-    name: "Hot Chicken Wings",
-    price: "IDR 45,000",
-    emoji: "🍗",
-  },
-];
+import { foodItems } from "@/data/dashboard";
 
 export default function MostOrderedFood() {
   return (

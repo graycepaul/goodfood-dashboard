@@ -1,59 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import {
-  LayoutDashboard,
-  ShoppingCart,
-  Utensils,
-  MessageSquare,
-  Settings,
-  CreditCard,
-  User,
-  HelpCircle,
-  Menu,
-  X,
-} from "lucide-react";
-
-const menuItems = [
-  {
-    section: "MENU",
-    items: [
-      {
-        id: "dashboard",
-        label: "Dashboard",
-        icon: LayoutDashboard,
-        active: true,
-      },
-      {
-        id: "food-order",
-        label: "Food Order",
-        icon: ShoppingCart,
-        active: false,
-      },
-      {
-        id: "manage-menu",
-        label: "Manage Menu",
-        icon: Utensils,
-        active: false,
-      },
-      {
-        id: "customer-review",
-        label: "Customer Review",
-        icon: MessageSquare,
-        active: false,
-      },
-    ],
-  },
-  {
-    section: "OTHERS",
-    items: [
-      { id: "settings", label: "Settings", icon: Settings, active: true },
-      { id: "payment", label: "Payment", icon: CreditCard, active: false },
-      { id: "accounts", label: "Accounts", icon: User, active: false },
-      { id: "help", label: "Help", icon: HelpCircle, active: false },
-    ],
-  },
-];
+import { Menu, X } from "lucide-react";
+import { menuItems } from "@/data/dashboard";
 
 export default function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);

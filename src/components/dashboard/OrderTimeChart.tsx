@@ -1,39 +1,7 @@
 "use client";
 
+import { orderTimeData } from "@/data/dashboard";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
-
-interface OrderTimeData {
-  name: string;
-  value: number;
-  color: string;
-  timeRange: string;
-  orders: number;
-  [key: string]: string | number; // This is the crucial index signature
-}
-
-const orderTimeData: OrderTimeData[] = [
-  {
-    name: "Afternoon",
-    value: 40,
-    color: "#5a6acf",
-    timeRange: "1pm - 4pm",
-    orders: 1890,
-  },
-  {
-    name: "Evening",
-    value: 32,
-    color: "#5a6acfb2",
-    timeRange: "6pm - 9pm",
-    orders: 1512,
-  },
-  {
-    name: "Morning",
-    value: 28,
-    color: "#6270cd69",
-    timeRange: "9am - 12pm",
-    orders: 1323,
-  },
-];
 
 export default function OrderTimeChart() {
   return (
